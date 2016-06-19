@@ -1,5 +1,7 @@
-$ = jQuery = require('jquery');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {App} from './components/app';
 
-var App = console.log('Hello world from Browserify');
-
-module.exports = App;
+if(document){
+  ReactDOM.render(<App />, document.getElementById('app'));
+}
