@@ -8,6 +8,14 @@ class ReactLifecycle extends React.Component {
     };
   }
 
+  componentWillMount() {
+    console.log("Inside Component Will Mount");
+  }
+
+  componentDidMount() {
+    console.log("Inside Component Did Mount");
+  }
+
   render() {
     return (
       <div>

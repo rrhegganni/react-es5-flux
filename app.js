@@ -9,11 +9,9 @@ var app = express();
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'dist')));
-var markup = server;
-app.get('/', function(req, res) {
-
+app.get('/home', function(req, res) {
 	res.render('index', {
-    markup: markup
+    markup: server()
 	});
 });
 
